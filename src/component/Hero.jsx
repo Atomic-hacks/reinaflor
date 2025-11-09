@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Button from "./ui/special-button";
+import SpotifyPlayer from "./ui/spotify-player";
 
 const Hero = () => {
   const [time, setTime] = useState(null);
@@ -22,18 +23,19 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
+      <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/50 to-transparent  z-20" />
       <video
         src="/videos/hero-vid.mp4"
         autoPlay
         loop
         muted
         playsInline
-        className="absolute inset-0 h-full w-full object-cover z-10"
+        className="absolute inset-0 h-full w-full object-center object-cover md:object-cover z-10"
       />
 
-      <nav className="relative flex flex-col justify-center items-center h-96 z-50 my-36 text-center text-white">
+      <nav className="relative flex flex-col justify-center items-center h-96 z-50 my-72 text-center text-white">
         <h1 className="uppercase tracking-[3px] text-3xl md:text-5xl mb-8">
-          Jeff.
+          Atom.
         </h1>
         <ul className="max-w-2xl mx-auto">
           <li className="mb-2">
@@ -63,6 +65,7 @@ const Hero = () => {
           })}
         </p>
       </div>
+      <SpotifyPlayer />
     </section>
   );
 };

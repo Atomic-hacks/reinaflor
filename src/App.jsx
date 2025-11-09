@@ -1,10 +1,12 @@
 import React from "react";
 import Hero from "./component/Hero";
+import Footer from "./component/layout/Footer";
 
 const App = () => {
   return (
-    <main className="relative max-w-[1440px] mx-auto">
+    <main className="relative mx-auto">
       <Hero />
+      <Footer />
     </main>
   );
 };
