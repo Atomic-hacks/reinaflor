@@ -33,7 +33,7 @@ const Hero = () => {
         className="absolute inset-0 h-full w-full object-center object-cover md:object-cover z-10"
       />
 
-      <nav className="relative flex flex-col justify-center items-center h-96 z-50 my-72 text-center text-white">
+      <nav className="relative flex flex-col justify-center items-center h-96 z-50 mt-40 md:mt-72 text-center text-white">
         <h1 className="uppercase tracking-[3px] text-3xl md:text-5xl mb-8">
           Atom.
         </h1>
