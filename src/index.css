@@ -1,33 +1,16 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Clash Display";
+  font-family: "zorgeous";
+  src: url("/fonts/ZORGEOUS.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "clashdisplay";
   src: url("/fonts/ClashDisplay-Regular.otf") format("opentype");
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Clash Display";
-  src: url("./fonts/ClashDisplay-Medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Nohemi";
-  src: url("/fonts/Nohemi-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Nohemi";
-  src: url("/fonts/Nohemi-SemiBold.otf") format("opentype");
-  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -39,29 +22,13 @@ html {
 }
 
 body {
-  background-color: #161616;
-  font-family: "Clash Display", serif;
+  background-color: #fff;
+  font-family: "clashdisplay", serif;
 
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-  font-family: "Nohemi", sans-serif;
-}
-
-button,
-input,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-  background: none;
-  border: none;
-  outline: none;
+  color: black;
 }
 
 button {
@@ -75,12 +42,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nohemi", sans-serif;
+  font-family: "zorgeous", sans-serif;
 }
 
 /* 7. Remove default list styles */
 ul,
 li {
-  list-style: none;
   cursor: pointer;
 }

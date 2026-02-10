@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section className="relative w-full  px-4 md:pt-12 md:px-12">
+    <section className="relative w-full bg-[#161616] text-white  px-4 pt-12 md:px-12">
       <div className="w-full flex flex-col md:flex-row justify-between items-start md:my-0 mt-16">
         <div className="flex flex-col">
-          <h3 className="text-sm font-semibold mb-4 uppercase">
+          <h3 className="text-sm font-semibold mb-4 uppercase tracking-[1px]">
             Subscribe to our newsletter
           </h3>
 
