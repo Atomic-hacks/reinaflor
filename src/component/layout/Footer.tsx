@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -6,7 +7,7 @@ const Footer = () => {
       <div className="w-full flex flex-col md:flex-row justify-between items-start md:my-0 mt-16">
         <div className="flex flex-col">
           <h3 className="text-sm font-semibold mb-4 uppercase tracking-[1px]">
-            Subscribe to our newsletter
+            Subscribe for notes on leadership, reform, and culture
           </h3>
 
           <form className="flex items-center border-b border-neutral-600 pb-2">
@@ -26,23 +27,23 @@ const Footer = () => {
         <div className="max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm md:m-0 my-12">
           <div>
             <h3 className="text-neutral-500 mb-4 uppercase text-xs tracking-wide">
-              (Customer Care)
+              (Practice)
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-neutral-500 transition">
-                  Account
-                </a>
+                <Link to="/about" className="hover:text-neutral-500 transition">
+                  About
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-neutral-500 transition">
-                  Our Store
-                </a>
+                <Link to="/work" className="hover:text-neutral-500 transition">
+                  Work
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-neutral-500 transition">
-                  FAQ
-                </a>
+                <Link to="/reform" className="hover:text-neutral-500 transition">
+                  Reform
+                </Link>
               </li>
             </ul>
           </div>
@@ -53,23 +54,26 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-neutral-500 transition">
-                  Shop
-                </a>
+                <Link to="/" className="hover:text-neutral-500 transition">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-neutral-500 transition">
-                  Brand
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-neutral-500 transition">
+                <Link to="/journal" className="hover:text-neutral-500 transition">
                   Journal
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-neutral-500 transition">
+                <Link to="/contact" className="hover:text-neutral-500 transition">
                   Contact
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="mailto:reina-flor.okori@olympian.org"
+                  className="hover:text-neutral-500 transition"
+                >
+                  Email
                 </a>
               </li>
             </ul>
@@ -77,26 +81,33 @@ const Footer = () => {
 
           <div>
             <h3 className="text-neutral-500 mb-4 uppercase text-xs tracking-wide">
-              (Other)
+              (Focus)
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-neutral-500 transition">
-                  Privacy
-                </a>
+                <span className="hover:text-neutral-500 transition">
+                  Leadership
+                </span>
               </li>
               <li>
-                <a href="#" className="hover:text-neutral-500 transition">
-                  404
-                </a>
+                <span className="hover:text-neutral-500 transition">
+                  Wellbeing
+                </span>
+              </li>
+              <li>
+                <span className="hover:text-neutral-500 transition">
+                  Storytelling
+                </span>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <span className="flex mt-5 md:mt-28">
-        <h1 className="text-7xl md:text-9xl">ATOM.</h1>
-        <p className="uppercase text-[9px] md:text-sm">Made by Atomic @</p>
+        <h1 className="text-5xl md:text-8xl">REINA-FLO-OKORI.</h1>
+        <p className="uppercase text-[9px] md:text-sm">
+          Performance, culture, and reform
+        </p>
       </span>
     </section>
   );

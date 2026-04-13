@@ -1,15 +1,32 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import Hero from "./component/Hero";
 import Footer from "./component/layout/Footer";
-
-import Shop from "./shop/Shop";
-import Brand from "./brand/Brand";
+import Work from "./shop/Shop";
+import Speaking from "./speaking/Speaking";
+import About from "./brand/Brand";
 import Journal from "./journal/Journal";
 import Contact from "./contact/Contact";
 import Navbar from "./component/layout/Navbar";
-import ProductDetail from "./ProductDetail";
-import CartDrawer from "./component/cart/CartDrawer";
+import WorkDetail from "./ProductDetail";
+import Reform from "./reform/Reform";
+import { gsapScrollToTop } from "./lib/gsap";
+
+const RouteScrollManager = () => {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    gsapScrollToTop();
+  }, [location.pathname]);
+
+  return null;
+};
 
 const AppLayout = () => {
   const location = useLocation();
@@ -17,19 +34,23 @@ const AppLayout = () => {
 
   return (
     <>
+      <RouteScrollManager />
       {!hideNavbar && <Navbar />}
       <Routes>
         <Route path="/" element={<Hero />} />
-
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/shop/:id" element={<ProductDetail />} />
-        <Route path="/brand" element={<Brand />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/work/:id" element={<WorkDetail />} />
+        <Route path="/speaking" element={<Speaking />} />
         <Route path="/journal" element={<Journal />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/reform" element={<Reform />} />
+        <Route path="/brand" element={<Navigate to="/about" replace />} />
+        <Route path="/shop" element={<Navigate to="/work" replace />} />
+        <Route path="/shop/:id" element={<Navigate to="/work" replace />} />
       </Routes>
 
       <Footer />
-      <CartDrawer />
     </>
   );
 };

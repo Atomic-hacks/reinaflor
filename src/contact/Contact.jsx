@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import AnimatedPageTitle from "../component/ui/AnimatedPageTitle";
 import RevealImage from "../component/ui/RevealImage";
+import useDocumentTitle from "../hooks/useDocumentTitle";
+import { useGsapPageAnimations } from "../lib/gsap";
+import { contactDetails } from "../data/portfolio";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +11,10 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const scopeRef = useRef(null);
+
+  useDocumentTitle("Contact");
+  useGsapPageAnimations(scopeRef);
 
   const handleChange = (e) => {
     setFormData({
@@ -23,19 +30,15 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full min-h-screen flex flex-col md:flex-row text-black">
-      {/* Left Side - Form */}
+    <section ref={scopeRef} className="w-full min-h-screen flex flex-col md:flex-row text-black">
       <div className="bg-white px-4 md:px-32 py-16 md:py-48 flex flex-col justify-between w-full md:w-[50%]">
         <div>
-          {/* Title */}
           <AnimatedPageTitle
             title="Contact"
             className="text-7xl md:text-8xl font-bold mb-16"
           />
 
-          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-8">
-            {/* Name and Email Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-xs font-semibold mb-3 tracking-wide">
@@ -66,14 +69,13 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Message Field */}
             <div>
               <label className="block text-xs font-semibold mb-3 tracking-wide">
                 MESSAGE
               </label>
               <textarea
                 name="message"
-                placeholder="Your Message"
+                placeholder="Tell me about the project, room, or collaboration."
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
@@ -81,12 +83,11 @@ const Contact = () => {
               />
             </div>
 
-            {/* Submit Button */}
             <button
               type="submit"
               className="bg-black text-white px-8 py-3 text-sm font-semibold hover:bg-gray-800 transition-colors"
             >
-              JOIN
+              Send Inquiry
             </button>
           </form>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 md:mt-20">
@@ -94,26 +95,24 @@ const Contact = () => {
               <p className="text-xs font-semibold mb-3 tracking-wide">
                 (LOCATION)
               </p>
-              <p className="text-sm font-medium">1456 Broadway</p>
-              <p className="text-sm font-medium">New York, NY 10018</p>
+              <p className="text-sm font-medium">{contactDetails.location}</p>
             </div>
 
             <div>
               <p className="text-xs font-semibold mb-3 tracking-wide">
-                (PHONE)
+                (EMAIL)
               </p>
-              <p className="text-sm font-medium">949.245.8870</p>
+              <p className="text-sm font-medium">{contactDetails.email}</p>
+              <p className="mt-4 text-xs font-semibold tracking-wide">(NOTES)</p>
+              <p className="text-sm font-medium">{contactDetails.phone}</p>
             </div>
           </div>
         </div>
-
-        {/* Contact Info */}
       </div>
 
-      {/* Right Side - Image */}
       <RevealImage
         src="/img/goth-tower2.jpg"
-        alt="Modern minimalist store interior with wooden furniture and shelving"
+        alt="Editorial architectural image for Reina-Flo-Okori"
         className="h-[320px] sm:h-[420px] md:h-auto w-full md:w-[50%]"
       />
     </section>
