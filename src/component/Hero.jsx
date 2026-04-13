@@ -83,13 +83,10 @@ const Hero = () => {
       ref={heroRef}
       className="relative h-screen w-full overflow-hidden text-white bg-[#161616]"
     >
-      <video
-        src="/videos/hero.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 z-10 h-full w-full object-cover"
+      <img
+        src="/img/reina4.webp"
+        alt="reina-hero"
+        className="absolute inset-0 z-10 h-full w-full md:object-center object-contain"
       />
 
       <div className="absolute inset-0 z-20 bg-gradient-to-b from-transparent via-black/50 to-transparent" />
