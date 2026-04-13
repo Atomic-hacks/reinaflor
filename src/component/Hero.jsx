@@ -86,7 +86,7 @@ const Hero = () => {
       <img
         src="/img/reina4.webp"
         alt="reina-hero"
-        className="absolute inset-0 z-10 h-full w-full md:object-center object-contain"
+        className="absolute inset-0 z-10 h-full w-full object-center object-cover"
       />
 
       <div className="absolute inset-0 z-20 bg-gradient-to-b from-transparent via-black/50 to-transparent" />
