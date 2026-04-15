@@ -18,22 +18,13 @@ const Navbar = () => {
   const overlayRef = useRef(null);
 
   const navLinks = [
-    {
-      name: "Work",
-      href: "/work",
-      hasDropdown: true,
-      dropdownItems: [
-        { name: "Leadership Platform", href: "/work" },
-        { name: "Speaking", href: "/work" },
-        { name: "Advisory", href: "/work" },
-        { name: "Culture Ventures", href: "/work" },
-      ],
-    },
-    { name: "Speaking", href: "/speaking" },
     { name: "About", href: "/about" },
+    { name: "Olympiadiary", href: "/olympiadiary" },
+    { name: "Podcast", href: "/podcast" },
+    { name: "REFOrM", href: "/reform" },
+
     { name: "Journal", href: "/journal" },
     { name: "Contact", href: "/contact" },
-    { name: "Reform", href: "/reform" },
   ];
 
   useEffect(() => {
@@ -100,14 +91,6 @@ const Navbar = () => {
     <nav className="relative w-full border-b border-gray-200 bg-white">
       <div className="mx-auto flex items-center justify-between px-4 py-2 md:px-16">
         <div className="hidden items-center gap-8 md:flex">
-          <Link
-            to="/"
-            className="group relative font-medium text-black transition-colors hover:text-gray-600"
-          >
-            Home
-            <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-black transition-all duration-300 ease-out group-hover:w-full" />
-          </Link>
-
           {navLinks.map((link) => (
             <div
               key={link.name}
@@ -286,9 +269,6 @@ const Navbar = () => {
             </div>
 
             <div className="space-y-6 px-6 py-8">
-              <Link to="/" className="block text-lg font-semibold">
-                Home
-              </Link>
               {navLinks.map((link) => (
                 <Link
                   key={link.name}

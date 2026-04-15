@@ -201,14 +201,14 @@ export const journalEntries = {
       id: 4,
       title: "The Quiet Discipline Behind Public Confidence",
       date: "01.12.2026",
-      image: "/img/olympic1.webp",
+      image: "/img/olympic2.webp",
       alt: "Editorial portrait with soft texture",
     },
     {
       id: 5,
       title: "Building Ventures With a Human Performance Lens",
       date: "12.06.2025",
-      image: "/img/olympic2.webp",
+      image: "/img/olympic5.webp",
       alt: "Minimal texture and shadow study",
     },
     {
@@ -223,10 +223,10 @@ export const journalEntries = {
 
 export const aboutSections = {
   intro:
-    "Reina-Flor Okori Makendengue is a four-time Olympian, strategist, and change architect working at the intersection of high performance, leadership, and human development. Competing at the highest level in track and field for both France and Equatorial Guinea, she is among the fastest women in French history in the 100m hurdles. Her career reflects discipline, resilience, and elite performance under pressure.",
-  founderLabel: "(About Reina-Flor Okori)",
+    "Reina-Flor Okori Makendengue is a four-time Olympian, strategist, and change architect working at the intersection of high performance, leadership, and human development. Competing at the highest level in track and field for both France and Equatorial Guinea, she is among the fastest women in French history in the 100m hurdles. Her career—spanning over two decades—reflects discipline, resilience, and the ability to perform under pressure at the highest level. Today, she translates that experience into her work with leaders, organizations, and institutions navigating complex and fast-changing environments.",
+  founderLabel: "(Reina-Flor Okori Makendengue)",
   founderBody:
-    "Reina-Flor Okori is a globally recognized keynote speaker, athlete, and investor operating at the intersection of sports tech, health tech, and ed tech, where she combines over 25 years of Olympic experience with innovation and entrepreneurship, and has collaborated with leading organizations including Orange, Deloitte, Schneider Electric, Air Liquide, the French Ministry, the International Chamber of Commerce in the Netherlands, and Forbes France.",
+    "She is the founder of REFORM™: The Olympic Leadership Standard, a methodology that applies elite athletic principles to leadership and performance, and Beauty of Sport (B.O.S), a global platform leveraging sport as a catalyst for education, empowerment, and cultural transformation. Born in Gabon, of Equatoguinean and Nigerian heritage, raised in France and now based in the Netherlands, she brings a strong cross-cultural perspective to her work, positioning the Olympic spirit as a strategic advantage in leadership.",
   basedTitle: "(Global) ROOTED IN AFRICA",
   valuesTitle: "What Makes Us Special",
   valuesBody: [
@@ -281,17 +281,66 @@ export const aboutSections = {
 };
 
 export const contactDetails = {
-  email: "reina-flor.okori@olympian.org",
+  name: "Reina-Flor Okori Makendengue",
+  dateOfBirth: "02.05.1980",
+  email: "Reina-Flor.okori@olympian.org",
+  phone: ["+31 6 57105735", "+33 7 81 89 78 38 (WhatsApp)"],
+  company: {
+    name: "B.O.S (The Beauty Of Sport)",
+    address: "Lutsborgsweg 74, 9752 VX Haren Groningen The Netherlands",
+    btwId: "NL0034763665B41",
+  },
+  identification: {
+    id: "WVVX047K7",
+    passport: "23AY52110",
+  },
+  title:
+    "Four-Time Olympian | Sports Ambassador | CEO of B.O.S (Beauty Of Sport) Company",
   location: "Global practice with roots in Africa and Europe",
-  phone: "Available on request for aligned collaborations",
 };
 
 export const reformContent = {
+  title: "REFOrM Framework™",
+  subtitle: "Olympic Performance Executive Training for Modern Leadership",
   eyebrow: "(Framework for renewal)",
-  intro:
-    "Reform is a living platform for leadership, identity, and sustainable performance. It carries the discipline of elite sport into conversations about growth, recovery, culture, and human transformation.",
-  story:
-    "The page is informed by Reina-Flo-Okori's Olympic journey, her work through Beauty Of Sport, and her broader commitment to building bridges across sport, education, entertainment, and cultural storytelling.",
+
+  problem: {
+    title: "The Problem",
+    intro:
+      "Even at the highest level of sport, performance does not break from lack of talent. It breaks from:",
+    reasons: [
+      "Misalignment",
+      "Invisible fatigue",
+      "Unmanaged pressure",
+      "Identity fragmentation in an AI-first work transition",
+    ],
+    insight:
+      "After competing at the Olympic level and transitioning into leadership environments, Reina-Flor Okori identified a critical gap: Leadership development ignores the biological and structural foundations of sustainable performance.",
+    solution:
+      "REFORM™ was created to close that gap. 6 weeks inside the Olympic spirit to reform your leadership.",
+  },
+
+  solution: {
+    title: "The Solution",
+    tagline: "REFORM™ is the first Olympic Performance Operating System™",
+    description:
+      "Designed to move leaders from fragmented performance to structured, sustainable mastery in a world that keeps evolving.",
+    formula:
+      "REFORM™ = (Trifecta) × (Layers) – (Obstacles) = Mastery of sustainable performance without burning out.",
+  },
+
+  framework: {
+    title: "The Framework",
+    components: [
+      { label: "Reflect", category: "foundation" },
+      { label: "Empower", category: "foundation" },
+      { label: "Focus", category: "foundation" },
+      { label: "Optimize", category: "practice" },
+      { label: "Resilience", category: "practice" },
+      { label: "Mastery", category: "outcome" },
+    ],
+  },
+
   pillars: [
     {
       title: "Reform the Self",
@@ -306,6 +355,26 @@ export const reformContent = {
       body: "Translate lived expertise into ventures, platforms, and stories that expand access to leadership and wellbeing.",
     },
   ],
+
+  callToAction: {
+    title: "Ready to Reform Your Leadership?",
+    actions: [
+      "Schedule a diagnostic assessment",
+      'Explore the "Ten Hurdlers for Sustainable Performance" masterclass',
+    ],
+  },
+
+  nextSteps: {
+    title: "Next Steps for Adoption",
+    items: [
+      "Schedule a diagnostic assessment for leadership teams",
+      'Explore the "Ten Hurdlers for Sustainable Performance" masterclass for executive education',
+    ],
+  },
+
+  story:
+    "The page is informed by Reina-Flo-Okori's Olympic journey, her work through Beauty Of Sport, and her broader commitment to building bridges across sport, education, entertainment, and cultural storytelling.",
+
   spotlight: [
     "Four-time Olympian across two nations",
     "Founder and CEO of Beauty Of Sport",

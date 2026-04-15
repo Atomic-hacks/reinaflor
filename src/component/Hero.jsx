@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import Button from "./ui/special-button";
-import SpotifyPlayer from "./ui/spotify-player";
 import { useNavigate } from "react-router-dom";
 import AnimatedPageTitle from "./ui/AnimatedPageTitle";
 import gsap from "../lib/gsap";
@@ -109,10 +108,11 @@ const Hero = () => {
         <ul className="space-y-2">
           {[
             { title: "About", href: "/about" },
-            { title: "Work", href: "/work" },
+            { title: "Olympiadiary", href: "/olympiadiary" },
+            { title: "Podcast", href: "/podcast" },
+            { title: "REFOrM", href: "/reform" },
             { title: "Journal", href: "/journal" },
             { title: "Contact", href: "/contact" },
-            { title: "Reform", href: "/reform" },
           ].map((item) => (
             <li key={item.title} data-hero-nav>
               <Button title={item.title} onPress={() => navigate(item.href)} />
@@ -127,8 +127,6 @@ const Hero = () => {
           <p>{time.value}</p>
         </div>
       )}
-
-      <SpotifyPlayer />
     </section>
   );
 };

@@ -36,7 +36,7 @@ const Work = () => {
         <div className="flex items-start justify-between">
           <div className="max-w-2xl">
             <AnimatedPageTitle
-              title="Work"
+              title="Olympiadiary"
               className="text-[5.5rem] md:text-[5.5rem] font-normal tracking-wide mb-6 text-black"
             />
             <p

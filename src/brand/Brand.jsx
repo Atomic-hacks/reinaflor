@@ -111,46 +111,115 @@ const About = () => {
           </div>
         </div>
 
-        <div
-          className="mt-32 grid grid-cols-1 gap-10 md:grid-cols-3"
-          data-gsap="stagger"
-        >
-          <div data-gsap-item>
-            <p className="text-xs uppercase tracking-[0.24em] text-neutral-500">
-              Expertise
-            </p>
-            <div className="mt-4 space-y-3">
-              {aboutSections.skills.map((item) => (
-                <p key={item} className="text-sm text-neutral-800">
-                  {item}
-                </p>
-              ))}
+        <div className="mt-32 space-y-20">
+          {/* Three Column Grid - Expertise, Methods, Background */}
+          <div
+            className="grid grid-cols-1 gap-10 md:grid-cols-3"
+            data-gsap="stagger"
+          >
+            <div data-gsap-item>
+              <p className="text-xs uppercase tracking-[0.24em] text-neutral-500">
+                Expertise
+              </p>
+              <div className="mt-4 space-y-3">
+                {aboutSections.skills.map((item) => (
+                  <p key={item} className="text-sm text-neutral-800">
+                    {item}
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            <div data-gsap-item>
+              <p className="text-xs uppercase tracking-[0.24em] text-neutral-500">
+                Methods
+              </p>
+              <div className="mt-4 space-y-3">
+                {aboutSections.tools.map((item) => (
+                  <p key={item} className="text-sm text-neutral-800">
+                    {item}
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            <div data-gsap-item>
+              <p className="text-xs uppercase tracking-[0.24em] text-neutral-500">
+                Background
+              </p>
+              <div className="mt-4 space-y-3">
+                {aboutSections.experience.map((item) => (
+                  <p key={item} className="text-sm text-neutral-800">
+                    {item}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
 
-          <div data-gsap-item>
-            <p className="text-xs uppercase tracking-[0.24em] text-neutral-500">
-              Methods
-            </p>
-            <div className="mt-4 space-y-3">
-              {aboutSections.tools.map((item) => (
-                <p key={item} className="text-sm text-neutral-800">
-                  {item}
-                </p>
-              ))}
-            </div>
-          </div>
+          {/* Divider */}
+          <div className="w-full h-px bg-neutral-200" />
 
-          <div data-gsap-item>
-            <p className="text-xs uppercase tracking-[0.24em] text-neutral-500">
-              Background
-            </p>
-            <div className="mt-4 space-y-3">
-              {aboutSections.experience.map((item) => (
-                <p key={item} className="text-sm text-neutral-800">
-                  {item}
-                </p>
-              ))}
+          {/* Contact Information - Symmetrical Layout */}
+          <div className="space-y-8">
+            <h3 className="text-3xl font-semibold text-black">Get In Touch</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+              {/* Left Column - Contact Details */}
+              <div className="space-y-8">
+                <div data-gsap="fade-up">
+                  <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 mb-3">
+                    Email
+                  </p>
+                  <a
+                    href="mailto:Reina-Flor.okori@olympian.org"
+                    className="text-lg text-neutral-900 hover:text-neutral-700 transition"
+                  >
+                    Reina-Flor.okori@olympian.org
+                  </a>
+                </div>
+
+                <div data-gsap="fade-up">
+                  <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 mb-3">
+                    Phone
+                  </p>
+                  <div className="space-y-2">
+                    <p className="text-lg text-neutral-900">+31 6 57105735</p>
+                    <p className="text-lg text-neutral-900">
+                      +33 7 81 89 78 38 (WhatsApp)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column - Company Details */}
+              <div className="space-y-8">
+                <div data-gsap="fade-up">
+                  <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 mb-3">
+                    Company
+                  </p>
+                  <p className="text-lg font-semibold text-neutral-900">
+                    B.O.S (The Beauty Of Sport)
+                  </p>
+                  <p className="text-sm text-neutral-700 mt-2">
+                    Lutsborgsweg 74, 9752 VX Haren Groningen
+                    <br />
+                    The Netherlands
+                  </p>
+                  <p className="text-sm text-neutral-700 mt-2">
+                    BTW-ID: NL0034763665B41
+                  </p>
+                </div>
+
+                <div data-gsap="fade-up">
+                  <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 mb-3">
+                    Identification
+                  </p>
+                  <p className="text-sm text-neutral-800">ID: WVVX047K7</p>
+                  <p className="text-sm text-neutral-800">
+                    Passport: 23AY52110
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

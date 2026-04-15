@@ -10,16 +10,20 @@ import Hero from "./component/Hero";
 import Footer from "./component/layout/Footer";
 import Work from "./shop/Shop";
 import Speaking from "./speaking/Speaking";
+const Olympiadiary = Work;
+const Podcast = Speaking;
 import About from "./brand/Brand";
 import Journal from "./journal/Journal";
 import Contact from "./contact/Contact";
 import Navbar from "./component/layout/Navbar";
 import WorkDetail from "./ProductDetail";
 import Reform from "./reform/Reform";
-import { gsapScrollToTop } from "./lib/gsap";
+import { gsapScrollToTop, useLenisScroll } from "./lib/gsap";
 
 const RouteScrollManager = () => {
   const location = useLocation();
+  // Initialize Lenis smooth scroll globally
+  useLenisScroll();
 
   React.useEffect(() => {
     gsapScrollToTop();
@@ -41,7 +45,10 @@ const AppLayout = () => {
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
         <Route path="/work/:id" element={<WorkDetail />} />
+        <Route path="/olympiadiary" element={<Olympiadiary />} />
+        <Route path="/olympiadiary/:id" element={<WorkDetail />} />
         <Route path="/speaking" element={<Speaking />} />
+        <Route path="/podcast" element={<Podcast />} />
         <Route path="/journal" element={<Journal />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/reform" element={<Reform />} />
