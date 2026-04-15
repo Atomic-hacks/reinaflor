@@ -137,13 +137,13 @@ const Navbar = () => {
           className="hidden absolute left-1/2 -translate-x-1/2 md:block"
         >
           <span className="text-2xl font-bold tracking-tight">
-            Reina-Flo-Okori
+            Reina-Flor-Okori
           </span>
         </Link>
 
         <Link to="/" className="md:hidden">
           <span className="text-2xl font-bold tracking-tight">
-            Reina-Flo-Okori
+            Reina-Flor-Okori
           </span>
         </Link>
 
@@ -151,7 +151,7 @@ const Navbar = () => {
           <a
             href="mailto:reina-flor.okori@olympian.org"
             className="group relative p-1 transition-transform hover:scale-110"
-            aria-label="Email Reina-Flo-Okori"
+            aria-label="Email Reina-Flor-Okori"
           >
             <svg
               width="20"
@@ -246,7 +246,7 @@ const Navbar = () => {
           >
             <div className="flex items-center justify-between border-b border-gray-200 px-6 py-5">
               <span className="text-xl font-bold tracking-tight">
-                Reina-Flo-Okori
+                Reina-Flor-Okori
               </span>
               <button
                 type="button"

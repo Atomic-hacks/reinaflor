@@ -30,7 +30,10 @@ const Contact = () => {
   };
 
   return (
-    <section ref={scopeRef} className="w-full min-h-screen flex flex-col md:flex-row text-black">
+    <section
+      ref={scopeRef}
+      className="w-full min-h-screen flex flex-col md:flex-row text-black"
+    >
       <div className="bg-white px-4 md:px-32 py-16 md:py-48 flex flex-col justify-between w-full md:w-[50%]">
         <div>
           <AnimatedPageTitle
@@ -103,7 +106,9 @@ const Contact = () => {
                 (EMAIL)
               </p>
               <p className="text-sm font-medium">{contactDetails.email}</p>
-              <p className="mt-4 text-xs font-semibold tracking-wide">(NOTES)</p>
+              <p className="mt-4 text-xs font-semibold tracking-wide">
+                (NOTES)
+              </p>
               <p className="text-sm font-medium">{contactDetails.phone}</p>
             </div>
           </div>
@@ -112,7 +117,7 @@ const Contact = () => {
 
       <RevealImage
         src="/img/goth-tower2.jpg"
-        alt="Editorial architectural image for Reina-Flo-Okori"
+        alt="Editorial architectural image for Reina-Flor-Okori"
         className="h-[320px] sm:h-[420px] md:h-auto w-full md:w-[50%]"
       />
     </section>

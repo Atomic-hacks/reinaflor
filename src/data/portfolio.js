@@ -68,7 +68,7 @@ export const workItems = [
     excerpt:
       "A storytelling platform bringing the ancient wisdom of Africa to children through inclusive, values-led narratives.",
     intro:
-      "Bokobokids extends Reina-Flo-Okori's work beyond performance into identity, belonging, and intergenerational imagination.",
+      "Bokobokids extends Reina-Flor-Okori's work beyond performance into identity, belonging, and intergenerational imagination.",
     metrics: [
       "African wisdom made accessible for children",
       "Values of inclusion, resilience, and pride",
@@ -96,7 +96,7 @@ export const workItems = [
     excerpt:
       "A focused advisory lens for founders building products around talent, health, and human development.",
     intro:
-      "Reina-Flo-Okori brings athlete-level pattern recognition into venture conversations about endurance, behavior change, and scalable care.",
+      "Reina-Flor-Okori brings athlete-level pattern recognition into venture conversations about endurance, behavior change, and scalable care.",
     metrics: [
       "Sport tech and health tech insight",
       "Human-performance product thinking",
@@ -136,7 +136,7 @@ export const workItems = [
       Impact:
         "Each session leaves audiences with a memorable emotional arc and a sharper frame for growth, resilience, and self-leadership.",
       Approach:
-        "Reina-Flo-Okori uses lived narrative, reflection prompts, and carefully paced insight to create meaningful audience connection.",
+        "Reina-Flor-Okori uses lived narrative, reflection prompts, and carefully paced insight to create meaningful audience connection.",
     },
   },
   {
@@ -373,7 +373,7 @@ export const reformContent = {
   },
 
   story:
-    "The page is informed by Reina-Flo-Okori's Olympic journey, her work through Beauty Of Sport, and her broader commitment to building bridges across sport, education, entertainment, and cultural storytelling.",
+    "The page is informed by Reina-Flor-Okori's Olympic journey, her work through Beauty Of Sport, and her broader commitment to building bridges across sport, education, entertainment, and cultural storytelling.",
 
   spotlight: [
     "Four-time Olympian across two nations",

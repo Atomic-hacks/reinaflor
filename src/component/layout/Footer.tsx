@@ -41,7 +41,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/reform" className="hover:text-neutral-500 transition">
+                <Link
+                  to="/reform"
+                  className="hover:text-neutral-500 transition"
+                >
                   Reform
                 </Link>
               </li>
@@ -59,12 +62,18 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/journal" className="hover:text-neutral-500 transition">
+                <Link
+                  to="/journal"
+                  className="hover:text-neutral-500 transition"
+                >
                   Journal
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-neutral-500 transition">
+                <Link
+                  to="/contact"
+                  className="hover:text-neutral-500 transition"
+                >
                   Contact
                 </Link>
               </li>
@@ -104,7 +113,7 @@ const Footer = () => {
         </div>
       </div>
       <span className="flex mt-5 md:mt-28">
-        <h1 className="text-5xl md:text-8xl">REINA-FLO-OKORI.</h1>
+        <h1 className="text-5xl md:text-8xl">Reina-Flor-OKORI.</h1>
         <p className="uppercase text-[9px] md:text-sm">
           Performance, culture, and reform
         </p>

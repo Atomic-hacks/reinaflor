@@ -93,7 +93,7 @@ const Hero = () => {
       <nav className="relative z-30 flex flex-col items-center justify-center text-center mt-48 md:mt-72">
         <div data-hero-title>
           <AnimatedPageTitle
-            title="Reina-Flo-Okori"
+            title="Reina-Flor-Okori"
             className="uppercase tracking-[3px] text-4xl md:text-8xl font-normal mb-8 text-white"
           />
         </div>
