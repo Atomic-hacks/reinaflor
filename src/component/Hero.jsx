@@ -88,22 +88,15 @@ const Hero = () => {
         className="absolute inset-0 z-10 h-full w-full object-center object-cover"
       />
 
-      <div className="absolute inset-0 z-20 bg-gradient-to-b from-transparent via-black/50 to-transparent" />
+      <div className="absolute inset-0 z-20 bg-linear-to-b from-transparent via-black/50 to-transparent" />
 
       <nav className="relative z-30 flex flex-col items-center justify-center text-center mt-48 md:mt-72">
         <div data-hero-title>
           <AnimatedPageTitle
             title="Reina-Flor-Okori"
-            className="uppercase tracking-[3px] text-4xl md:text-8xl font-normal mb-8 text-white"
+            className="uppercase tracking-[3px] text-4xl md:text-8xl font-normal text-white"
           />
         </div>
-        <p
-          className="mb-8 max-w-md px-6 text-sm uppercase tracking-[0.22em] text-white/80"
-          data-hero-copy
-        >
-          Olympian, founder, investor, and storyteller shaping leadership,
-          culture, and sustainable performance.
-        </p>
 
         <ul className="space-y-2">
           {[

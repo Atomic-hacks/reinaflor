@@ -32,35 +32,14 @@ const Work = () => {
 
   return (
     <div ref={scopeRef} className="min-h-screen bg-white px-4 md:px-32">
-      <div className="relative py-16 bg-white">
+      <div className="relative py-8 bg-white">
         <div className="flex items-start justify-between">
           <div className="max-w-2xl">
             <AnimatedPageTitle
-              title="Olympiadiary"
-              className="text-[5.5rem] md:text-[5.5rem] font-normal tracking-wide mb-6 text-black"
+              title="Work"
+              className="text-[5.5rem] md:text-[5.5rem] font-normal tracking-wide text-black"
             />
-            <p
-              className="text-base tracking-wide leading-relaxed max-w-lg text-neutral-800 font-medium"
-              data-gsap="fade-up"
-            >
-              Selected case studies, ventures, and leadership platforms shaped
-              around performance, culture, and sustainable growth.
-            </p>
           </div>
-
-          <button className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-50 transition-colors">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            >
-              <path d="M12 4L4 12M4 4l8 8" />
-            </svg>
-          </button>
         </div>
       </div>
 
