@@ -4,6 +4,7 @@ import RevealImage from "../component/ui/RevealImage";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import { useGsapPageAnimations } from "../lib/gsap";
 import { contactDetails, reformContent } from "../data/portfolio";
+import { rfoImageSets } from "../data/rfoImages";
 
 const Reform = () => {
   const scopeRef = useRef(null);
@@ -31,7 +32,7 @@ const Reform = () => {
       <div className="mt-20 flex flex-col md:flex-row md:justify-between md:items-end gap-8">
         <div data-gsap="reveal-image" className="w-full md:w-[60%]">
           <RevealImage
-            src="/img/reina2.webp"
+            src={rfoImageSets.reform[0]}
             alt="Reina-Flor Okori REFORM Framework"
             className="w-full h-[420px] md:h-[650px]"
           />
@@ -42,8 +43,7 @@ const Reform = () => {
               Framework Overview
             </p>
             <p className="text-lg md:text-xl leading-snug font-semibold text-neutral-900">
-              A premium, minimal framework for leaders rebuilding focus,
-              culture, and sustainable excellence.
+              A clear system for rebuilding focus, culture, and sustainable excellence.
             </p>
           </div>
           <a
@@ -129,7 +129,7 @@ const Reform = () => {
             data-gsap="parallax"
           >
             <img
-              src="/img/olympic1.webp"
+              src={rfoImageSets.reform[1]}
               alt="REFORM Framework Solution"
               className="w-full h-full object-cover"
             />
@@ -174,7 +174,7 @@ const Reform = () => {
           data-gsap="parallax"
         >
           <img
-            src="/img/olympic2.webp"
+            src={rfoImageSets.reform[2]}
             alt="Framework Implementation"
             className="w-full h-full object-cover"
           />
@@ -232,7 +232,7 @@ const Reform = () => {
             data-gsap="parallax"
           >
             <img
-              src="/img/reina3.webp"
+              src={rfoImageSets.reform[3]}
               alt="Leadership Transformation"
               className="w-full h-full object-cover"
             />
@@ -292,8 +292,7 @@ const Reform = () => {
           REFOrM™: Transforming the Future of Leadership
         </h1>
         <p className="text-lg text-neutral-700" data-gsap="fade-up">
-          Join leaders, executives, and teams who are reforming their approach
-          to sustainable excellence, performance, and human transformation.
+          Join leaders and teams building a more sustainable way to perform.
         </p>
         <a
           href={`mailto:${contactDetails.email}`}

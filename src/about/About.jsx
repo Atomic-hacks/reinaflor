@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import AnimatedPageTitle from "../component/ui/AnimatedPageTitle";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import { useGsapPageAnimations } from "../lib/gsap";
+import { rfoImageSets } from "../data/rfoImages";
 
 const About = () => {
   const scopeRef = useRef(null);
@@ -30,29 +31,29 @@ const About = () => {
             data-gsap="fade-up"
           >
             <img
-              src="/img/reina1.webp"
+              src={rfoImageSets.aboutLead[0]}
               alt="Reina"
               className="w-full aspect-4/5 object-cover rounded-lg"
             />
             <img
-              src="/img/reina2.webp"
+              src={rfoImageSets.aboutLead[1]}
               alt="Reina"
               className="w-full aspect-4/5 object-cover rounded-lg"
             />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <img
-              src="/img/reina3.webp"
+              src={rfoImageSets.aboutGallery[0]}
               alt="Reina"
               className="w-full aspect-square object-cover rounded-lg"
             />
             <img
-              src="/img/reina1.webp"
+              src={rfoImageSets.aboutGallery[1]}
               alt="Reina"
               className="w-full aspect-square object-cover rounded-lg"
             />
             <img
-              src="/img/reina2.webp"
+              src={rfoImageSets.aboutGallery[2]}
               alt="Reina"
               className="w-full aspect-square object-cover rounded-lg"
             />

@@ -4,6 +4,7 @@ import RevealImage from "../component/ui/RevealImage";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import { useGsapPageAnimations } from "../lib/gsap";
 import { contactDetails } from "../data/portfolio";
+import { rfoImageSets } from "../data/rfoImages";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -40,6 +41,10 @@ const Contact = () => {
             title="Contact"
             className="text-5xl md:text-6xl font-bold mb-12"
           />
+
+          <p className="mb-10 max-w-md text-sm text-neutral-700" data-gsap="fade-up">
+            Reach out for speaking, advisory, partnerships, or REFOrM.
+          </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
@@ -109,8 +114,8 @@ const Contact = () => {
       </div>
 
       <RevealImage
-        src="/img/goth-tower2.jpg"
-        alt="Editorial architectural image"
+        src={rfoImageSets.contact}
+        alt="Reina-Flor Okori portrait"
         className="h-80 sm:h-screen md:h-auto w-full md:w-[55%] object-cover"
       />
     </section>

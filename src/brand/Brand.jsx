@@ -4,6 +4,7 @@ import RevealImage from "../component/ui/RevealImage";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import { useGsapPageAnimations } from "../lib/gsap";
 import { aboutSections } from "../data/portfolio";
+import { rfoImageSets } from "../data/rfoImages";
 
 const About = () => {
   const scopeRef = useRef(null);
@@ -27,7 +28,7 @@ const About = () => {
 
           <div className="w-full flex flex-col md:flex-row md:justify-between md:items-end gap-8 mt-12">
             <RevealImage
-              src="/img/reina1.webp"
+              src={rfoImageSets.aboutLead[0]}
               alt="Portrait of Reina-Flor Okori"
               className="w-full md:w-[65%] h-[420px] md:h-[750px]"
             />
@@ -47,6 +48,25 @@ const About = () => {
                 >
                   {aboutSections.founderBody}
                 </p>
+              </div>
+
+              <div
+                className="mt-8 grid grid-cols-2 gap-4"
+                data-gsap="stagger"
+              >
+                {rfoImageSets.aboutGallery.slice(0, 2).map((image) => (
+                  <div
+                    key={image}
+                    className="overflow-hidden rounded-lg bg-neutral-100 aspect-[4/5]"
+                    data-gsap-item
+                  >
+                    <img
+                      src={image}
+                      alt="Reina-Flor Okori portrait study"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -75,7 +95,7 @@ const About = () => {
 
           <div className="relative w-full md:w-[45%] aspect-4/3 overflow-hidden">
             <img
-              src="/img/olympic1.webp"
+              src={rfoImageSets.aboutLead[1]}
               alt="Editorial landscape for Reina-Flor Okori"
               className="w-full h-full object-cover"
               data-gsap="parallax"
@@ -84,7 +104,7 @@ const About = () => {
 
           <div className="relative flex flex-col w-full md:w-[20%] aspect-3/4 overflow-hidden">
             <img
-              src="/img/olympic2.webp"
+              src={rfoImageSets.aboutValues[0]}
               alt="Editorial floral detail"
               className="w-full h-full object-cover"
             />
@@ -92,23 +112,20 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-32 space-y-12">
-          <h2 className="text-3xl font-semibold text-black">
-            {aboutSections.approachTitle}
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {aboutSections.approachItems.map((item, idx) => (
-              <div key={idx} className="space-y-3" data-gsap="fade-up">
-                <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 font-medium">
-                  {item.label}
-                </p>
-                <p className="text-lg leading-relaxed text-neutral-800">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+          {rfoImageSets.aboutGallery.slice(2).concat(rfoImageSets.aboutValues[1]).map((image) => (
+            <div
+              key={image}
+              className="overflow-hidden rounded-lg bg-neutral-100 aspect-[5/4]"
+              data-gsap="fade-up"
+            >
+              <img
+                src={image}
+                alt="Reina-Flor Okori documentary portrait"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          ))}
         </div>
 
         <div className="mt-32 space-y-20">
@@ -153,72 +170,6 @@ const About = () => {
                     {item}
                   </p>
                 ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Divider */}
-          <div className="w-full h-px bg-neutral-200" />
-
-          {/* Contact Information - Symmetrical Layout */}
-          <div className="space-y-8">
-            <h3 className="text-3xl font-semibold text-black">Get In Touch</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-              {/* Left Column - Contact Details */}
-              <div className="space-y-8">
-                <div data-gsap="fade-up">
-                  <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 mb-3">
-                    Email
-                  </p>
-                  <a
-                    href="mailto:Reina-Flor.okori@olympian.org"
-                    className="text-lg text-neutral-900 hover:text-neutral-700 transition"
-                  >
-                    Reina-Flor.okori@olympian.org
-                  </a>
-                </div>
-
-                <div data-gsap="fade-up">
-                  <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 mb-3">
-                    Phone
-                  </p>
-                  <div className="space-y-2">
-                    <p className="text-lg text-neutral-900">+31 6 57105735</p>
-                    <p className="text-lg text-neutral-900">
-                      +33 7 81 89 78 38 (WhatsApp)
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Right Column - Company Details */}
-              <div className="space-y-8">
-                <div data-gsap="fade-up">
-                  <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 mb-3">
-                    Company
-                  </p>
-                  <p className="text-lg font-semibold text-neutral-900">
-                    B.O.S (The Beauty Of Sport)
-                  </p>
-                  <p className="text-sm text-neutral-700 mt-2">
-                    Lutsborgsweg 74, 9752 VX Haren Groningen
-                    <br />
-                    The Netherlands
-                  </p>
-                  <p className="text-sm text-neutral-700 mt-2">
-                    BTW-ID: NL0034763665B41
-                  </p>
-                </div>
-
-                <div data-gsap="fade-up">
-                  <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 mb-3">
-                    Identification
-                  </p>
-                  <p className="text-sm text-neutral-800">ID: WVVX047K7</p>
-                  <p className="text-sm text-neutral-800">
-                    Passport: 23AY52110
-                  </p>
-                </div>
               </div>
             </div>
           </div>

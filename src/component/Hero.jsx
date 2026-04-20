@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import AnimatedPageTitle from "./ui/AnimatedPageTitle";
 import gsap from "../lib/gsap";
 import useDocumentTitle from "../hooks/useDocumentTitle";
+import { rfoImageSets } from "../data/rfoImages";
 
 const Hero = () => {
   const [time, setTime] = useState(null);
@@ -83,8 +84,8 @@ const Hero = () => {
       className="relative h-screen w-full overflow-hidden text-white bg-[#161616]"
     >
       <img
-        src="/img/reina4.webp"
-        alt="reina-hero"
+        src={rfoImageSets.hero}
+        alt="Reina-Flor Okori portrait"
         className="absolute inset-0 z-10 h-full w-full object-center object-cover"
       />
 
@@ -97,6 +98,13 @@ const Hero = () => {
             className="uppercase tracking-[3px] text-4xl md:text-8xl font-normal text-white"
           />
         </div>
+
+        <p
+          className="mt-5 mb-8 max-w-sm text-sm uppercase tracking-[0.28em] text-white/80"
+          data-hero-copy
+        >
+          Olympic insight for leadership, culture, and reform.
+        </p>
 
         <ul className="space-y-2">
           {[

@@ -1,3 +1,5 @@
+import { rfoImageSets } from "./rfoImages";
+
 export const workItems = [
   {
     id: "beauty-of-sport",
@@ -6,25 +8,25 @@ export const workItems = [
     year: "2026",
     client: "Founder-Led Venture",
     role: "Strategy, Story, Partnerships",
-    image: "/img/reina1.webp",
-    hoverImage: "/img/reina2.webp",
-    images: ["/img/reina1.webp", "/img/reina2.webp"],
+    image: rfoImageSets.work[0][0],
+    hoverImage: rfoImageSets.work[0][1],
+    images: rfoImageSets.work[0],
     excerpt:
-      "An ecosystem at the intersection of sport, education, and entertainment designed to unlock human potential.",
+      "A platform linking sport, culture, and leadership development.",
     intro:
-      "Beauty Of Sport translates elite-performance insight into leadership experiences, brand storytelling, and sustainable wellbeing systems.",
+      "Beauty Of Sport turns elite-performance insight into leadership experiences, brand stories, and wellbeing systems.",
     metrics: [
-      "25 years of high-performance insight",
-      "Sport, education, and entertainment convergence",
-      "Leadership psychology with holistic wellbeing",
+      "25 years of performance insight",
+      "Sport, culture, and education crossover",
+      "Leadership with recovery in view",
     ],
     tabs: {
       Overview:
-        "Beauty Of Sport was shaped as a strategic umbrella for speaking, advisory work, learning programs, and performance-centered collaborations.",
+        "Beauty Of Sport brings together speaking, advisory, learning, and partnerships under one clear performance lens.",
       Impact:
-        "The work reframes sport as a development tool for leaders, teams, and communities seeking resilience, clarity, and high trust cultures.",
+        "The work helps leaders and teams build trust, resilience, and sharper decision-making.",
       Approach:
-        "Each engagement begins with identity, pressure, and recovery, then scales those insights into communication, programming, and growth systems.",
+        "Each engagement starts with identity, pressure, and recovery, then turns those lessons into practical systems.",
     },
   },
   {
@@ -34,25 +36,25 @@ export const workItems = [
     year: "2025",
     client: "Teams and Executives",
     role: "Workshop Design, Facilitation",
-    image: "/img/olympic1.webp",
-    hoverImage: "/img/olympic2.webp",
-    images: ["/img/olympic1.webp", "/img/olympic2.webp"],
+    image: rfoImageSets.work[1][0],
+    hoverImage: rfoImageSets.work[1][1],
+    images: rfoImageSets.work[1],
     excerpt:
-      "A portfolio of workshops that turn elite competition lessons into practical decision-making frameworks for teams.",
+      "Workshops that translate elite sport into team-ready leadership tools.",
     intro:
-      "This work converts Olympic discipline into repeatable leadership habits that help organizations move with confidence under pressure.",
+      "These labs turn Olympic discipline into repeatable habits for leaders working under pressure.",
     metrics: [
-      "Pressure-tested communication rituals",
-      "Recovery and performance balance",
+      "Clear communication rituals",
+      "Recovery built into performance",
       "Culture design for ambitious teams",
     ],
     tabs: {
       Overview:
-        "The labs are built for founders, operators, and mission-driven teams who want performance without burnout.",
+        "The labs are built for founders, operators, and teams that want high standards without burnout.",
       Impact:
-        "Participants leave with a sharper language for focus, accountability, emotional regulation, and trust under load.",
+        "Participants leave with better language for focus, accountability, trust, and emotional control.",
       Approach:
-        "Sessions combine keynote storytelling, guided reflection, and practical frameworks that are tailored to each room.",
+        "Sessions mix story, reflection, and practical frameworks shaped to each room.",
     },
   },
   {
@@ -62,25 +64,25 @@ export const workItems = [
     year: "2024",
     client: "Families and Schools",
     role: "Co-Founder, Storytelling Strategy",
-    image: "/img/olympic3.webp",
-    hoverImage: "/img/olympic1.webp",
-    images: ["/img/olympic3.webp", "/img/olympic1.webp"],
+    image: rfoImageSets.work[2][0],
+    hoverImage: rfoImageSets.work[2][1],
+    images: rfoImageSets.work[2],
     excerpt:
-      "A storytelling platform bringing the ancient wisdom of Africa to children through inclusive, values-led narratives.",
+      "A children's storytelling platform rooted in African wisdom and joy.",
     intro:
-      "Bokobokids extends Reina-Flor-Okori's work beyond performance into identity, belonging, and intergenerational imagination.",
+      "Bokobokids extends the work from performance into identity, belonging, and cultural memory.",
     metrics: [
-      "African wisdom made accessible for children",
-      "Values of inclusion, resilience, and pride",
+      "African stories for young readers",
+      "Values-led editorial direction",
       "Storytelling as cultural infrastructure",
     ],
     tabs: {
       Overview:
-        "The platform was co-founded to help children grow up connected to stories that affirm their humanity and cultural inheritance.",
+        "The platform was co-founded to give children stories that affirm who they are and where they come from.",
       Impact:
-        "Its editorial direction centers confidence, empathy, curiosity, and a sense of rooted possibility for young readers.",
+        "Its world-building centers confidence, empathy, curiosity, and rooted possibility.",
       Approach:
-        "The work blends narrative craft, educational thinking, and culturally grounded visual worlds that invite repeat discovery.",
+        "The work blends narrative craft, education, and culturally grounded visual storytelling.",
     },
   },
   {
@@ -90,25 +92,25 @@ export const workItems = [
     year: "2026",
     client: "Sport Tech, Health Tech, Edutech",
     role: "Investor, Strategic Advisor",
-    image: "/img/olympic2.webp",
-    hoverImage: "/img/olympic3.webp",
-    images: ["/img/olympic2.webp", "/img/olympic3.webp"],
+    image: rfoImageSets.work[3][0],
+    hoverImage: rfoImageSets.work[3][1],
+    images: rfoImageSets.work[3],
     excerpt:
-      "A focused advisory lens for founders building products around talent, health, and human development.",
+      "Advisory for founders building around health, talent, and human growth.",
     intro:
-      "Reina-Flor-Okori brings athlete-level pattern recognition into venture conversations about endurance, behavior change, and scalable care.",
+      "The advisory practice brings athlete-level pattern recognition to product, growth, and behavior change.",
     metrics: [
-      "Sport tech and health tech insight",
       "Human-performance product thinking",
-      "Operator empathy with founder ambition",
+      "Founder empathy with operator rigor",
+      "Narrative and partnership clarity",
     ],
     tabs: {
       Overview:
-        "Advisory engagements sit at the overlap of innovation, lived expertise, and practical go-to-market clarity.",
+        "Advisory sits at the overlap of innovation, lived expertise, and market clarity.",
       Impact:
-        "The result is sharper positioning, more human product thinking, and stronger alignment between ambition and user need.",
+        "Founders gain sharper positioning, stronger trust signals, and more human product decisions.",
       Approach:
-        "Support often spans narrative, partnership mapping, audience trust, and translating insight into offers that can scale.",
+        "Support often spans strategy, narrative, partnerships, and offer design.",
     },
   },
   {
@@ -118,25 +120,25 @@ export const workItems = [
     year: "2026",
     client: "Global Conferences",
     role: "Speaker, Moderator, Communicator",
-    image: "/img/reina2.webp",
-    hoverImage: "/img/reina3.webp",
-    images: ["/img/reina2.webp", "/img/reina3.webp"],
+    image: rfoImageSets.work[4][0],
+    hoverImage: rfoImageSets.work[4][1],
+    images: rfoImageSets.work[4],
     excerpt:
-      "Talks and moderated conversations on leadership psychology, identity, high performance, and sustainable ambition.",
+      "Talks on leadership, identity, pressure, and sustainable ambition.",
     intro:
-      "The keynote practice is designed to feel intimate and cinematic, translating a two-decade athletic career into language that moves rooms.",
+      "The keynote practice turns a long athletic career into clear, human language that moves rooms.",
     metrics: [
-      "Leadership psychology for modern audiences",
-      "Stories shaped across continents and disciplines",
-      "Human-centered performance narratives",
+      "Leadership psychology in practice",
+      "Stories shaped across cultures",
+      "Performance without hype",
     ],
     tabs: {
       Overview:
-        "Speaking engagements are designed for audiences looking for more depth than motivation and more honesty than hype.",
+        "These talks are built for audiences wanting more depth than motivation and more honesty than noise.",
       Impact:
-        "Each session leaves audiences with a memorable emotional arc and a sharper frame for growth, resilience, and self-leadership.",
+        "Each session leaves people with a memorable frame for growth, resilience, and self-leadership.",
       Approach:
-        "Reina-Flor-Okori uses lived narrative, reflection prompts, and carefully paced insight to create meaningful audience connection.",
+        "The format blends lived story, reflection, and carefully paced insight.",
     },
   },
   {
@@ -146,25 +148,25 @@ export const workItems = [
     year: "2026",
     client: "Reform Initiative",
     role: "Founder, Framework Author",
-    image: "/img/reina3.webp",
-    hoverImage: "/img/reina1.webp",
-    images: ["/img/reina3.webp", "/img/reina1.webp"],
+    image: rfoImageSets.work[5][0],
+    hoverImage: rfoImageSets.work[5][1],
+    images: rfoImageSets.work[5],
     excerpt:
-      "A minimal leadership framework exploring reinvention, discipline, and holistic performance through the lens of an Olympian's life.",
+      "A leadership framework for clarity, discipline, and sustainable performance.",
     intro:
-      "Reform brings together leadership psychology, wellbeing, and cultural grounding into a single narrative for renewal.",
+      "Reform brings together leadership psychology, wellbeing, and cultural grounding in one system.",
     metrics: [
       "Rooted in Olympic discipline",
-      "Built for leaders in transition",
-      "Focused on sustainable high performance",
+      "Built for transition",
+      "Focused on sustainable excellence",
     ],
     tabs: {
       Overview:
-        "Reform is a thought platform for people rebuilding identity, pace, and purpose in the middle of visible ambition.",
+        "Reform is a platform for people rebuilding identity, pace, and purpose under pressure.",
       Impact:
-        "It offers language and structure for a more humane, resilient kind of leadership that values wholeness as much as achievement.",
+        "It gives leaders a more humane structure for resilience, performance, and wholeness.",
       Approach:
-        "The framework combines storytelling, reflective prompts, and systems thinking to guide personal and collective recalibration.",
+        "The framework combines story, reflection, and systems thinking.",
     },
   },
 ];
@@ -173,96 +175,93 @@ export const journalEntries = {
   featured: [
     {
       id: 1,
-      title: "What Elite Sport Teaches About Reinvention",
+      title: "Reinvention After the Peak",
       date: "04.10.2026",
-      image: "/img/olympic1.webp",
-      alt: "Portrait-oriented editorial image",
+      image: rfoImageSets.journal[0],
+      alt: "Editorial portrait of Reina-Flor Okori",
       size: "large",
     },
     {
       id: 2,
-      title: "Performance Without Disconnection",
+      title: "Performance Without Drift",
       date: "03.18.2026",
-      image: "/img/olympic2.webp",
-      alt: "Editorial portrait in muted tones",
+      image: rfoImageSets.journal[1],
+      alt: "Speaking portrait of Reina-Flor Okori",
       size: "small",
     },
     {
       id: 3,
-      title: "Why Story Still Matters in Leadership",
+      title: "Story as Strategy",
       date: "02.24.2026",
-      image: "/img/olympic3.webp",
-      alt: "Architectural abstract composition",
+      image: rfoImageSets.journal[2],
+      alt: "Leadership portrait of Reina-Flor Okori",
       size: "small",
     },
   ],
   regular: [
     {
       id: 4,
-      title: "The Quiet Discipline Behind Public Confidence",
+      title: "Calm Under Load",
       date: "01.12.2026",
-      image: "/img/olympic2.webp",
-      alt: "Editorial portrait with soft texture",
+      image: rfoImageSets.journal[3],
+      alt: "Action portrait of Reina-Flor Okori",
     },
     {
       id: 5,
-      title: "Building Ventures With a Human Performance Lens",
+      title: "Building With Recovery",
       date: "12.06.2025",
-      image: "/img/olympic5.webp",
-      alt: "Minimal texture and shadow study",
+      image: rfoImageSets.journal[4],
+      alt: "Editorial event image of Reina-Flor Okori",
     },
     {
       id: 6,
-      title: "Culture, Memory, and the Future of Children's Stories",
+      title: "Culture Needs Memory",
       date: "11.21.2025",
-      image: "/img/olympic3.webp",
-      alt: "Landscape with warm cinematic treatment",
+      image: rfoImageSets.journal[5],
+      alt: "Documentary portrait of Reina-Flor Okori",
     },
   ],
 };
 
 export const aboutSections = {
   intro:
-    "Reina-Flor Okori Makendengue is a four-time Olympian, strategist, and change architect working at the intersection of high performance, leadership, and human development. Competing at the highest level in track and field for both France and Equatorial Guinea, she is among the fastest women in French history in the 100m hurdles. Her career—spanning over two decades—reflects discipline, resilience, and the ability to perform under pressure at the highest level. Today, she translates that experience into her work with leaders, organizations, and institutions navigating complex and fast-changing environments.",
+    "Reina-Flor Okori Makendengue is a four-time Olympian, founder, and advisor working across performance, leadership, and human development.",
   founderLabel: "(Reina-Flor Okori Makendengue)",
   founderBody:
-    "She is the founder of REFORM™: The Olympic Leadership Standard, a methodology that applies elite athletic principles to leadership and performance, and Beauty of Sport (B.O.S), a global platform leveraging sport as a catalyst for education, empowerment, and cultural transformation. Born in Gabon, of Equatoguinean and Nigerian heritage, raised in France and now based in the Netherlands, she brings a strong cross-cultural perspective to her work, positioning the Olympic spirit as a strategic advantage in leadership.",
+    "She leads REFOrM™, a leadership standard shaped by Olympic discipline, and Beauty Of Sport, a platform using sport to drive education, empowerment, and culture.",
   basedTitle: "(Global) ROOTED IN AFRICA",
-  valuesTitle: "What Makes Us Special",
+  valuesTitle: "What Guides The Work",
   valuesBody: [
-    "Elite Performance Principles: Structured frameworks inspired by Olympic discipline and high-performance environments.",
-    "Leadership Intelligence: Development of strategic thinking, decision-making, and adaptive leadership capacity. Human Transformation: Cultivating resilience, mindset strength, and sustainable personal growth.",
+    "Olympic discipline turned into practical leadership tools.",
+    "Strategic thinking built for pressure, change, and growth.",
   ],
-  approachTitle: "Our Educational Approach",
+  approachTitle: "How The Work Moves",
   approachItems: [
     {
-      label: "Elite Performance Systems",
-      description:
-        "Structured frameworks inspired by Olympic discipline and high-performance environments.",
+      label: "Performance Systems",
+      description: "Clear frameworks shaped by elite training and lived rigor.",
     },
     {
       label: "Leadership Intelligence",
-      description:
-        "Development of strategic thinking, decision-making, and adaptive leadership capacity.",
+      description: "Better judgment, communication, and adaptive decision-making.",
     },
     {
-      label: "Human Transformation",
-      description:
-        "Cultivating resilience, mindset strength, and sustainable personal growth.",
+      label: "Human Development",
+      description: "Resilience, recovery, and growth that can last.",
     },
     {
-      label: "Lecture Topics",
+      label: "Talk Themes",
       description:
-        "High performance, resilient leadership in the age of AI, leadership psychology, cross-cultural collaboration, and empowerment of women and young people.",
+        "High performance, resilient leadership, culture, and the future of influence.",
     },
   ],
   skills: [
     "High Performance Systems",
     "Leadership Psychology",
-    "Resilience Development",
+    "Resilience Design",
     "Strategic Thinking",
     "Keynote Speaking",
-    "Cross-Cultural Collaboration",
+    "Cross-Cultural Advisory",
   ],
   tools: [
     "REFORM™ Methodology",
@@ -270,13 +269,13 @@ export const aboutSections = {
     "Executive Workshops",
     "Leadership Coaching",
     "Advisory Sprints",
-    "Organizational Transformation",
+    "Culture Transformation",
   ],
   experience: [
     "Four-time Olympian across France and Equatorial Guinea",
-    "25 years of high-performance Olympic experience",
-    "Globally recognized keynote speaker and lecturer",
-    "Investor across sports tech, health tech, and edutech",
+    "25 years in elite performance",
+    "Global keynote speaker and lecturer",
+    "Investor in sport, health, and education ventures",
   ],
 };
 
@@ -294,39 +293,37 @@ export const contactDetails = {
     id: "WVVX047K7",
     passport: "23AY52110",
   },
-  title:
-    "Four-Time Olympian | Sports Ambassador | CEO of B.O.S (Beauty Of Sport) Company",
-  location: "Global practice with roots in Africa and Europe",
+  title: "Four-time Olympian | Founder of Beauty Of Sport",
+  location: "Global practice rooted in Africa and Europe",
 };
 
 export const reformContent = {
   title: "REFOrM Framework™",
-  subtitle: "Olympic Performance Executive Training for Modern Leadership",
+  subtitle: "Olympic training for modern leadership.",
   eyebrow: "(Framework for renewal)",
 
   problem: {
     title: "The Problem",
-    intro:
-      "Even at the highest level of sport, performance does not break from lack of talent. It breaks from:",
+    intro: "Performance rarely breaks from talent. It breaks from:",
     reasons: [
       "Misalignment",
       "Invisible fatigue",
       "Unmanaged pressure",
-      "Identity fragmentation in an AI-first work transition",
+      "Fragmented identity",
     ],
     insight:
-      "After competing at the Olympic level and transitioning into leadership environments, Reina-Flor Okori identified a critical gap: Leadership development ignores the biological and structural foundations of sustainable performance.",
+      "Years in Olympic sport and leadership exposed the same gap: most leadership models ignore the human systems that sustain performance.",
     solution:
-      "REFORM™ was created to close that gap. 6 weeks inside the Olympic spirit to reform your leadership.",
+      "REFORM™ closes that gap with a six-week reset for leaders and teams.",
   },
 
   solution: {
     title: "The Solution",
-    tagline: "REFORM™ is the first Olympic Performance Operating System™",
+    tagline: "REFORM™ is an Olympic performance operating system.",
     description:
-      "Designed to move leaders from fragmented performance to structured, sustainable mastery in a world that keeps evolving.",
+      "It helps leaders move from fragmented output to structured, sustainable mastery.",
     formula:
-      "REFORM™ = (Trifecta) × (Layers) – (Obstacles) = Mastery of sustainable performance without burning out.",
+      "REFORM™ = clarity, discipline, recovery, and repetition working together.",
   },
 
   framework: {
@@ -344,79 +341,69 @@ export const reformContent = {
   pillars: [
     {
       title: "Reform the Self",
-      body: "Build from clarity, emotional regulation, and embodied discipline so ambition does not outpace identity.",
+      body: "Build from clarity, regulation, and discipline so ambition stays grounded.",
     },
     {
       title: "Reform the Team",
-      body: "Create cultures of trust, accountability, and recovery where high standards and humanity can coexist.",
+      body: "Create cultures where trust, accountability, and recovery can coexist.",
     },
     {
       title: "Reform the System",
-      body: "Translate lived expertise into ventures, platforms, and stories that expand access to leadership and wellbeing.",
+      body: "Turn lived expertise into ventures, programs, and stories that scale.",
     },
   ],
 
   callToAction: {
     title: "Ready to Reform Your Leadership?",
-    actions: [
-      "Schedule a diagnostic assessment",
-      'Explore the "Ten Hurdlers for Sustainable Performance" masterclass',
-    ],
+    actions: ["Book a diagnostic", "Explore the masterclass"],
   },
 
   nextSteps: {
-    title: "Next Steps for Adoption",
-    items: [
-      "Schedule a diagnostic assessment for leadership teams",
-      'Explore the "Ten Hurdlers for Sustainable Performance" masterclass for executive education',
-    ],
+    title: "Next Steps",
+    items: ["Book a team diagnostic", "Explore the executive masterclass"],
   },
 
   story:
-    "The page is informed by Reina-Flor-Okori's Olympic journey, her work through Beauty Of Sport, and her broader commitment to building bridges across sport, education, entertainment, and cultural storytelling.",
+    "The framework draws from an Olympic career, Beauty Of Sport, and a wider commitment to culture, education, and leadership.",
 
   spotlight: [
     "Four-time Olympian across two nations",
-    "Founder and CEO of Beauty Of Sport",
-    "Investor in sport tech, health tech, and edutech",
+    "Founder of Beauty Of Sport",
+    "Investor in sport, health, and education",
     "Co-founder of Bokobokids",
   ],
 };
 
 export const speakingContent = {
   description:
-    "A voice for leaders, innovators, and teams with a vision for what's next. From corporate summits, executive retreats, and innovation festivals, to intimate boardroom salons, Reina-Flor speaks to the identity behind leadership, the strategy beneath high performance, and the mindset shaping sustainable influence. She translates Olympic experience, sport-based soft skills, and research-backed leadership into actionable insights for CEOs and executive teams navigating complexity and transformation.",
+    "Reina-Flor speaks to leaders, teams, and institutions navigating pressure, change, and growth.",
   audiences: [
     {
-      title: "The Identity Behind Leadership",
-      description:
-        "Exploring how personal narrative and authentic self-awareness shape sustainable influence and resilient decision-making.",
+      title: "Identity",
+      description: "How self-awareness shapes resilient leadership.",
     },
     {
-      title: "The Strategy Beneath High Performance",
-      description:
-        "Translating Olympic discipline into frameworks for sustained excellence under pressure, in business and in life.",
+      title: "Performance",
+      description: "Olympic discipline translated into practical team habits.",
     },
     {
-      title: "The Mindset Shaping Sustainable Influence",
-      description:
-        "Building cultures and teams that value both ambition and humanity—where high standards and wellbeing coexist.",
+      title: "Influence",
+      description: "Cultures where ambition and humanity move together.",
     },
   ],
-  images: ["/img/olympic1.webp", "/img/olympic5.jpg", "/img/reina5.webp"],
+  images: rfoImageSets.speaking,
   topicsTitle: "Key Topics",
   keyTopics: [
-    "Olympic Mindset & High-Performance Leadership",
-    "Psychology of Performing Under Pressure",
-    "Motivation & Team Building",
-    "Bridging African and Western World Leadership",
-    "Diversity, Intercultural & Cross-Cultural Leadership",
-    "Sport Culture & Storytelling",
-    "Organizational Transformation in Times of Disruption",
+    "High-performance leadership",
+    "Performing under pressure",
+    "Motivation and team culture",
+    "Cross-cultural leadership",
+    "Diversity and belonging",
+    "Sport, culture, and storytelling",
+    "Leading through disruption",
   ],
-  formTitle: "Ready for a Speaking Engagement?",
-  formDescription:
-    "Reach out to discuss your event, audience, and vision. Let's explore how to bring high-performance insight and authentic leadership dialogue to your organization.",
+  formTitle: "Book a Speaking Engagement",
+  formDescription: "Share your event, audience, and goals.",
 };
 
 export const getWorkById = (id) => workItems.find((item) => item.id === id);
