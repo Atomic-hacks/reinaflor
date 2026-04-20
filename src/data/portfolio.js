@@ -229,7 +229,7 @@ export const aboutSections = {
   founderLabel: "(Reina-Flor Okori Makendengue)",
   founderBody:
     "She leads REFOrM™, a leadership standard shaped by Olympic discipline, and Beauty Of Sport, a platform using sport to drive education, empowerment, and culture.",
-  basedTitle: "(Global) ROOTED IN AFRICA",
+  basedTitle: "Built from elite performance, cultural depth, and clear leadership thinking.",
   valuesTitle: "What Guides The Work",
   valuesBody: [
     "Olympic discipline turned into practical leadership tools.",

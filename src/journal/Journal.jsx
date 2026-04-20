@@ -31,17 +31,21 @@ const Journal = () => {
   };
 
   return (
-    <section ref={scopeRef} className="w-full bg-white py-12 px-4 md:px-32">
-      <div className="max-w-xl mb-12">
-        <AnimatedPageTitle title="Journal" />
+    <section ref={scopeRef} className="w-full bg-white">
+      <div className="bg-[#111111] px-4 py-12 text-white md:px-32 md:py-16">
+        <div className="max-w-xl">
+          <AnimatedPageTitle title="Journal" className="text-white" />
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {journalEntries.featured
-          .concat(journalEntries.regular)
-          .map((article) => (
-            <JournalCard key={article.id} article={article} />
-          ))}
+      <div className="bg-white px-4 py-12 md:px-32">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {journalEntries.featured
+            .concat(journalEntries.regular)
+            .map((article) => (
+              <JournalCard key={article.id} article={article} />
+            ))}
+        </div>
       </div>
     </section>
   );

@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import AnimatedPageTitle from "../component/ui/AnimatedPageTitle";
 import RevealImage from "../component/ui/RevealImage";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import { useGsapPageAnimations } from "../lib/gsap";
-import { contactDetails, reformContent } from "../data/portfolio";
+import { reformContent } from "../data/portfolio";
 import { rfoImageSets } from "../data/rfoImages";
 
 const Reform = () => {
@@ -46,13 +47,13 @@ const Reform = () => {
               A clear system for rebuilding focus, culture, and sustainable excellence.
             </p>
           </div>
-          <a
-            href={`mailto:${contactDetails.email}`}
+          <Link
+            to="/book-session"
             className="inline-flex border border-black px-5 py-3 text-sm font-semibold transition-colors hover:bg-black hover:text-white"
             data-gsap="fade-up"
           >
-            Explore the Framework
-          </a>
+            Book Speaking
+          </Link>
         </div>
       </div>
 
@@ -240,14 +241,14 @@ const Reform = () => {
 
           <div className="flex flex-col justify-between space-y-6">
             {reformContent.callToAction.actions.map((action, idx) => (
-              <a
+              <Link
                 key={idx}
-                href={`mailto:${contactDetails.email}`}
+                to="/book-session"
                 className="border-2 border-black px-8 py-6 text-center font-semibold hover:bg-black hover:text-white transition"
                 data-gsap="slide-right"
               >
                 {action}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -294,13 +295,13 @@ const Reform = () => {
         <p className="text-lg text-neutral-700" data-gsap="fade-up">
           Join leaders and teams building a more sustainable way to perform.
         </p>
-        <a
-          href={`mailto:${contactDetails.email}`}
+        <Link
+          to="/book-session"
           className="inline-flex border-2 border-black px-8 py-4 text-base font-semibold hover:bg-black hover:text-white transition mt-8"
           data-gsap="scale-up"
         >
-          Start Your Reform Journey
-        </a>
+          Book Reina-Flor
+        </Link>
       </section>
     </section>
   );

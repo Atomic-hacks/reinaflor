@@ -42,11 +42,11 @@ const Speaking = () => {
   return (
     <div ref={scopeRef} className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="w-full px-4 md:px-32 py-16 border-b border-neutral-200">
+      <section className="w-full bg-[#111111] px-4 py-16 text-white md:px-32 border-b border-white/10">
         <div className="max-w-3xl">
-          <AnimatedPageTitle title="Speaking" />
+          <AnimatedPageTitle title="Speaking" className="text-white" />
           <p
-            className="mt-6 text-base leading-relaxed text-neutral-800"
+            className="mt-6 text-base leading-relaxed text-white/75"
             data-gsap="fade-up"
           >
             {speakingContent.description}
@@ -57,10 +57,10 @@ const Speaking = () => {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           {speakingContent.audiences.map((audience, idx) => (
             <div key={idx} className="space-y-2" data-gsap="fade-up">
-              <p className="text-sm uppercase tracking-[0.24em] text-neutral-500 font-medium">
+              <p className="text-sm uppercase tracking-[0.24em] text-white/45 font-medium">
                 {audience.title}
               </p>
-              <p className="text-neutral-800 leading-relaxed">
+              <p className="text-white/75 leading-relaxed">
                 {audience.description}
               </p>
             </div>
@@ -88,9 +88,9 @@ const Speaking = () => {
       </section>
 
       {/* Key Topics */}
-      <section className="w-full px-4 md:px-32 py-20 border-t border-neutral-200">
+      <section className="w-full bg-[#111111] px-4 py-20 text-white border-t border-white/10 md:px-32">
         <div className="max-w-4xl">
-          <h2 className="text-3xl font-semibold text-black mb-12">
+          <h2 className="text-3xl font-semibold text-white mb-12">
             {speakingContent.topicsTitle}
           </h2>
 
@@ -98,13 +98,13 @@ const Speaking = () => {
             {speakingContent.keyTopics.map((topic, idx) => (
               <div
                 key={idx}
-                className="flex gap-4 pb-6 border-b border-neutral-200"
+                className="flex gap-4 pb-6 border-b border-white/12"
                 data-gsap="fade-up"
               >
-                <span className="text-xs uppercase tracking-[0.24em] text-neutral-500 font-medium min-w-max mt-1">
+                <span className="text-xs uppercase tracking-[0.24em] text-white/45 font-medium min-w-max mt-1">
                   0{idx + 1}
                 </span>
-                <p className="text-neutral-800 leading-relaxed">{topic}</p>
+                <p className="text-white/75 leading-relaxed">{topic}</p>
               </div>
             ))}
           </div>
@@ -216,25 +216,25 @@ const Speaking = () => {
       </section>
 
       {/* Contact Info Footer */}
-      <section className="w-full px-4 md:px-32 py-16 border-t border-neutral-200">
+      <section className="w-full bg-[#111111] px-4 py-16 text-white border-t border-white/10 md:px-32">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 font-medium mb-3">
+            <p className="text-xs uppercase tracking-[0.24em] text-white/45 font-medium mb-3">
               Phone
             </p>
-            <p className="text-neutral-900">+31 6 57105735</p>
+            <p className="text-white/75">+31 6 57105735</p>
           </div>
           <div>
-            <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 font-medium mb-3">
+            <p className="text-xs uppercase tracking-[0.24em] text-white/45 font-medium mb-3">
               Email
             </p>
-            <p className="text-neutral-900">Reina-Flor.okori@olympian.org</p>
+            <p className="text-white/75">Reina-Flor.okori@olympian.org</p>
           </div>
           <div>
-            <p className="text-xs uppercase tracking-[0.24em] text-neutral-500 font-medium mb-3">
+            <p className="text-xs uppercase tracking-[0.24em] text-white/45 font-medium mb-3">
               Speaker
             </p>
-            <p className="text-neutral-900">Reina Flor Okori</p>
+            <p className="text-white/75">Reina Flor Okori</p>
           </div>
         </div>
       </section>

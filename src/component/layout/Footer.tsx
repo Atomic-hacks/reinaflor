@@ -78,12 +78,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="mailto:reina-flor.okori@olympian.org"
-                  className="hover:text-neutral-500 transition"
-                >
-                  Email
-                </a>
+                <Link to="/contact" className="hover:text-neutral-500 transition">
+                  Connect
+                </Link>
               </li>
             </ul>
           </div>

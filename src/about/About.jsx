@@ -11,7 +11,7 @@ const About = () => {
   useGsapPageAnimations(scopeRef);
 
   return (
-    <section ref={scopeRef} className="w-full px-4 md:px-32 bg-white">
+    <section ref={scopeRef} className="w-full px-4 bg-white">
       <div className="w-full">
         {/* Header Section - Minimal */}
         <section className="w-full text-black py-16">

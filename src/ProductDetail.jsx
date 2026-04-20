@@ -75,12 +75,12 @@ const WorkDetail = () => {
             </div>
           </div>
 
-          <a
-            href="mailto:reina-flor.okori@olympian.org"
+          <Link
+            to="/book-session"
             className="mt-8 w-full bg-black py-2 text-center text-xs font-semibold text-white hover:bg-gray-800 transition-colors"
           >
-            Get in Touch →
-          </a>
+            Book Speaking →
+          </Link>
         </div>
       </div>
       <section className="w-full bg-white py-12 px-8 md:px-16 lg:px-24">

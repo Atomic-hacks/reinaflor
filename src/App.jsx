@@ -15,6 +15,7 @@ const Podcast = Speaking;
 import About from "./brand/Brand";
 import Journal from "./journal/Journal";
 import Contact from "./contact/Contact";
+import BookSession from "./book/BookSession";
 import Navbar from "./component/layout/Navbar";
 import WorkDetail from "./ProductDetail";
 import Reform from "./reform/Reform";
@@ -51,6 +52,7 @@ const AppLayout = () => {
         <Route path="/podcast" element={<Podcast />} />
         <Route path="/journal" element={<Journal />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/book-session" element={<BookSession />} />
         <Route path="/reform" element={<Reform />} />
         <Route path="/brand" element={<Navigate to="/about" replace />} />
         <Route path="/shop" element={<Navigate to="/work" replace />} />

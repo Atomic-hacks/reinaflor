@@ -24,7 +24,7 @@ const Navbar = () => {
     { name: "REFOrM", href: "/reform" },
 
     { name: "Journal", href: "/journal" },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact", href: "/book-session" },
   ];
 
   useEffect(() => {
@@ -148,10 +148,10 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden items-center gap-6 md:flex">
-          <a
-            href="mailto:reina-flor.okori@olympian.org"
+          <Link
+            to="/book-session"
             className="group relative p-1 transition-transform hover:scale-110"
-            aria-label="Email Reina-Flor-Okori"
+            aria-label="Book Reina-Flor-Okori"
           >
             <svg
               width="20"
@@ -165,7 +165,7 @@ const Navbar = () => {
               <path d="M3 5h14v10H3z" />
               <path d="m4 6 6 5 6-5" strokeLinecap="round" />
             </svg>
-          </a>
+          </Link>
 
           <Link
             to="/about"
@@ -189,7 +189,7 @@ const Navbar = () => {
           </button>
 
           <Link
-            to="/contact"
+            to="/book-session"
             className="group relative text-sm font-medium text-black transition-colors hover:text-gray-600"
           >
             Connect
@@ -278,12 +278,12 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <a
-                href="mailto:reina-flor.okori@olympian.org"
+              <Link
+                to="/book-session"
                 className="block border-t border-gray-200 pt-6 text-sm font-medium text-gray-500"
               >
-                reina-flor.okori@olympian.org
-              </a>
+                Book Reina-Flor
+              </Link>
             </div>
           </aside>
         </>
