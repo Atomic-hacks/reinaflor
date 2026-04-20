@@ -53,11 +53,23 @@ const About = () => {
           </p>
 
           <div className="mt-8 flex w-full flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <RevealImage
-              src={rfoImageSets.aboutLead[0]}
-              alt="Portrait of Reina-Flor Okori"
-              className="h-[460px] w-full md:h-[780px] md:w-[68%]"
-            />
+            <div
+              className="relative h-screen min-h-[560px] w-full overflow-hidden md:h-[780px] md:min-h-0 md:w-[68%]"
+              data-gsap="reveal-image"
+            >
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcSet={rfoImageSets.aboutLead[0]}
+                />
+                <img
+                  src={rfoImageSets.aboutGallery[1]}
+                  alt="Portrait of Reina-Flor Okori"
+                  className="h-full w-full object-cover object-center"
+                  draggable={false}
+                />
+              </picture>
+            </div>
 
             <div className="flex w-full flex-col justify-between md:w-[32%]">
               <div className="space-y-6">

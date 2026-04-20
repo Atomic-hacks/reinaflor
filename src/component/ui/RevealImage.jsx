@@ -4,6 +4,7 @@ const RevealImage = ({
   src,
   alt = "",
   className = "",
+  imgClassName = "",
 }) => {
   return (
     <div
@@ -13,7 +14,7 @@ const RevealImage = ({
       <img
         src={src}
         alt={alt}
-        className="w-full h-full object-cover"
+        className={`h-full w-full object-cover ${imgClassName}`}
         draggable={false}
       />
     </div>
