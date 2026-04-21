@@ -242,10 +242,14 @@ const StrategicAdvisory = () => {
                 </button>
               </div>
               <p className="text-sm text-neutral-500">
-                Or email: href="mailto:contact@reina-flor.co"
-                className="font-semibold text-black hover:text-neutral-600
+                Or Email:
+                <a
+                  href="mailto:contact@reina-flor.co"
+                  className="font-semibold text-black hover:text-neutral-600
                 transition-colors"
-                <a>contact@reina-flor.co</a>
+                >
+                  contact@reina-flor.co
+                </a>
               </p>
             </div>
           </div>

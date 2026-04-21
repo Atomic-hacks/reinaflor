@@ -91,7 +91,7 @@ const Advisory = () => {
             <RevealImage
               src={rfoImageSets.reform[2]}
               alt="Strategic Advisory"
-              className="w-full h-[350px]"
+              className="w-full h-[550px]"
             />
           </div>
         </div>
@@ -138,7 +138,7 @@ const Advisory = () => {
             <RevealImage
               src={rfoImageSets.journal[1]}
               alt="For Whom"
-              className="w-full h-[350px]"
+              className="w-full h-[550px]"
             />
           </div>
         </div>
@@ -161,7 +161,7 @@ const Advisory = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {areasOfWork.map((area, idx) => (
             <div key={idx} className="space-y-4 group">
-              <div className="relative h-[280px] overflow-hidden">
+              <div className="relative h-[450px] overflow-hidden">
                 <RevealImage
                   src={area.image}
                   alt={area.title}
@@ -214,7 +214,7 @@ const Advisory = () => {
             <RevealImage
               src={rfoImageSets.speaking[0]}
               alt="Format"
-              className="w-full h-[350px]"
+              className="w-full h-[550px]"
             />
           </div>
         </div>
@@ -244,7 +244,7 @@ const Advisory = () => {
             <RevealImage
               src={rfoImageSets.journal[3]}
               alt="Investment"
-              className="w-full h-[350px]"
+              className="w-full h-[550px]"
             />
           </div>
         </div>
@@ -279,7 +279,7 @@ const Advisory = () => {
             <RevealImage
               src={rfoImageSets.aboutValues[1]}
               alt="Outcomes"
-              className="w-full h-[350px]"
+              className="w-full h-[550px]"
             />
           </div>
         </div>
