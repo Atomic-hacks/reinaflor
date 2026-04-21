@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import AnimatedPageTitle from "./ui/AnimatedPageTitle";
 import gsap from "../lib/gsap";
 import useDocumentTitle from "../hooks/useDocumentTitle";
-import { rfoImageSets } from "../data/rfoImages";
 
 const Hero = () => {
   const [time, setTime] = useState(null);
@@ -83,13 +82,16 @@ const Hero = () => {
       ref={heroRef}
       className="relative h-screen w-full overflow-hidden text-white bg-[#161616]"
     >
-      <img
-        src={rfoImageSets.hero}
-        alt="Reina-Flor Okori portrait"
-        className="absolute inset-0 z-10 h-full w-full object-center object-cover"
+      <video
+        src="/videos/hero.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 z-10 h-full w-full object-cover object-center"
       />
 
-      <div className="absolute inset-0 z-20 bg-linear-to-b from-transparent via-black/50 to-transparent" />
+      <div className="absolute inset-0 z-20 bg-black/80" />
 
       <nav className="relative z-30 flex flex-col items-center justify-center text-center mt-48 md:mt-72">
         <div data-hero-title>

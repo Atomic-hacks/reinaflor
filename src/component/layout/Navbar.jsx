@@ -19,10 +19,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "About", href: "/about" },
+    { name: "Advisory", href: "/advisory" },
+    { name: "REFORM™", href: "/strategic-advisory" },
     { name: "Olympiadiary", href: "/olympiadiary" },
     { name: "Podcast", href: "/podcast" },
-    { name: "REFOrM", href: "/reform" },
-
     { name: "Journal", href: "/journal" },
     { name: "Contact", href: "/book-session" },
   ];

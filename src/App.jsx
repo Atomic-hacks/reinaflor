@@ -19,6 +19,8 @@ import BookSession from "./book/BookSession";
 import Navbar from "./component/layout/Navbar";
 import WorkDetail from "./ProductDetail";
 import Reform from "./reform/Reform";
+import Advisory from "./advisory/Advisory";
+import StrategicAdvisory from "./advisory/StrategicAdvisory";
 import { gsapScrollToTop, useLenisScroll } from "./lib/gsap";
 
 const RouteScrollManager = () => {
@@ -44,6 +46,8 @@ const AppLayout = () => {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
+        <Route path="/advisory" element={<Advisory />} />
+        <Route path="/strategic-advisory" element={<StrategicAdvisory />} />
         <Route path="/work" element={<Work />} />
         <Route path="/work/:id" element={<WorkDetail />} />
         <Route path="/olympiadiary" element={<Olympiadiary />} />

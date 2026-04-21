@@ -35,7 +35,7 @@ const Reform = () => {
           <RevealImage
             src={rfoImageSets.reform[0]}
             alt="Reina-Flor Okori REFORM Framework"
-            className="w-full h-[420px] md:h-[650px]"
+            className="w-full h-[420px] md:h-[850px]"
           />
         </div>
         <div className="w-full md:w-[35%] space-y-6">
@@ -44,7 +44,8 @@ const Reform = () => {
               Framework Overview
             </p>
             <p className="text-lg md:text-xl leading-snug font-semibold text-neutral-900">
-              A clear system for rebuilding focus, culture, and sustainable excellence.
+              A clear system for rebuilding focus, culture, and sustainable
+              excellence.
             </p>
           </div>
           <Link
@@ -126,13 +127,13 @@ const Reform = () => {
           </div>
 
           <div
-            className="w-full h-[500px] overflow-hidden rounded-lg"
+            className="w-full h-[500px] overflow-hidden"
             data-gsap="parallax"
           >
-            <img
+            <RevealImage
               src={rfoImageSets.reform[1]}
               alt="REFORM Framework Solution"
-              className="w-full h-full object-cover"
+              className="w-full h-full"
             />
           </div>
         </div>
@@ -171,13 +172,13 @@ const Reform = () => {
         </div>
 
         <div
-          className="relative w-full aspect-4/3 overflow-hidden rounded-lg"
+          className="relative w-full aspect-4/3 overflow-hidden"
           data-gsap="parallax"
         >
-          <img
+          <RevealImage
             src={rfoImageSets.reform[2]}
             alt="Framework Implementation"
-            className="w-full h-full object-cover"
+            className="w-full h-full"
           />
         </div>
       </section>
@@ -229,13 +230,13 @@ const Reform = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div
-            className="relative w-full aspect-3/4 overflow-hidden rounded-lg"
+            className="relative w-full aspect-3/4 overflow-hidden"
             data-gsap="parallax"
           >
-            <img
+            <RevealImage
               src={rfoImageSets.reform[3]}
               alt="Leadership Transformation"
-              className="w-full h-full object-cover"
+              className="w-full h-full"
             />
           </div>
 
